@@ -7,7 +7,9 @@ $(document).ready(function() {
     localStorage.setItem(time, value);
   }); 
  
-   
+      // Update seconds
+      setInterval(displayTodaysDate, 1000);
+
     // Setting up date and time
   $("#currentDay").text(moment());
   
@@ -19,6 +21,8 @@ $(document).ready(function() {
     // Display date at top of page in this format
     currentDate.text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));  
   }
+
+  // Verifies time of day to determine background color
 
 
 
