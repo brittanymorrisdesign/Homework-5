@@ -6,6 +6,32 @@ $(document).ready(function() {
     
     localStorage.setItem(time, value);
   }); 
+ 
+   
+    // Setting up date and time
   $("#currentDay").text(moment());
+  
+    // Update date on page every second
+    currentDate = $("#currentDay");
+    displayTodaysDate();
+
+    function displayTodaysDate() {
+    // Display date at top of page in this format
+    currentDate.text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   });
