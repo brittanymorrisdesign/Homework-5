@@ -34,16 +34,20 @@ $(document).ready(function() {
   // Background colors
   function setColors() {
     var currentHr = moment().format("h");
+    // console.log("currentHr", currentHr)
+    // console.log(typeof currentHr)
       $(".time-block").each(function() {
     var currentId = ($(this).attr("id"));
-
+    // console.log("currentId", currentId)
+    // console.log(typeof currentId)
+    console.log(currentHr < currentId )
     if (currentHr < currentId ) {
       $(this).addClass("past")
     }
     else if (currentHr > currentId ) {
-      $(this).addClass("future")
+      $(this).addClass("future").removeClass("past present");
     } else {
-      $(this).addClass("present")
+      $(this).addClass("present").removeClass("past future")
     }
   })
 }
@@ -51,31 +55,31 @@ $(document).ready(function() {
 // Append local storage data to the screen
 function saveLocalStorage() {
     var userInput9 = localStorage.getItem("9");
-    $("#hour-9").children(".description").text(userInput9);
+    $("#9").children(".description").text(userInput9);
 
     var userInput10 = localStorage.getItem("10");
-    $("#hour-10").children(".description").text( userInput10);
+    $("#10").children(".description").text( userInput10);
 
     var userInput11 = localStorage.getItem("11");
-    $("#hour-11").children(".description").text(userInput11);
+    $("#11").children(".description").text(userInput11);
 
     var userInput12 = localStorage.getItem("13");
-    $("#hour-12").children(".description").text(userInput12);
+    $("#12").children(".description").text(userInput12);
 
     var userInput1 = localStorage.getItem("14");
-    $("#hour-1").children(".description").text(userInput1);
+    $("#1").children(".description").text(userInput1);
 
     var userInput2 = localStorage.getItem("15");
-    $("#hour-2").children(".description").text(userInput2);
+    $("#2").children(".description").text(userInput2);
 
     var userInput3 = localStorage.getItem("16");
-    $("#hour-3").children(".description").text(userInput3);
+    $("#3").children(".description").text(userInput3);
 
     var userInput4 = localStorage.getItem("17");
-    $("#hour-4").children(".description").text(userInput4);
+    $("#4").children(".description").text(userInput4);
     
     var userInput5 = localStorage.getItem("18");
-    $("#hour-5").children(".description").text(userInput5);
+    $("#5").children(".description").text(userInput5);
   }
 
 
