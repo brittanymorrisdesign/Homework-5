@@ -17,5 +17,4 @@ SO THAT I can manage my time effectively
 Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity. 
 
 Built With: HTML5, CSS3, Bootstrap, jQuery
-<img width="1370" alt="Screen Shot 2019-12-18 at 10 40 29 PM" src="https://user-images.githubusercontent.com/44029053/71143130-7dcd7400-21e7-11ea-8ba7-322330726419.png">
-
+<img width="1370" alt="Screen Shot 2019-12-18 at 10 40 29 PM" src="https://user-images.githubusercontent.com/44029053/71143231-cbe27780-21e7-11ea-9c5e-c4112c204638.png">
