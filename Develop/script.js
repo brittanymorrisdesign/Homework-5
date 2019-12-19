@@ -41,11 +41,11 @@ $(document).ready(function() {
     var currentId = ($(this).attr("id"));
     // console.log("currentId", currentId)
     // console.log(typeof currentId)
-    console.log(currentHr > currentId )
-    if (currentHr > currentId ) {
+    console.log(currentHr > currentId)
+    if (currentHr > currentId) {
       $(this).addClass("past")
     }
-    else if (currentHr < currentId ) {
+    else if (currentHr < currentId) {
       $(this).addClass("future").removeClass("past present");
     } else {
       $(this).addClass("present").removeClass("past future")
@@ -64,25 +64,24 @@ function saveLocalStorage() {
     var userInput11 = localStorage.getItem("11");
     $("#11").children(".description").text(userInput11);
 
-    var userInput12 = localStorage.getItem("13");
+    var userInput12 = localStorage.getItem("12");
     $("#12").children(".description").text(userInput12);
 
-    var userInput1 = localStorage.getItem("14");
-    $("#1").children(".description").text(userInput1);
+    var userInput1 = localStorage.getItem("13");
+    $("#13").children(".description").text(userInput1);
 
-    var userInput2 = localStorage.getItem("15");
-    $("#2").children(".description").text(userInput2);
+    var userInput2 = localStorage.getItem("14");
+    $("#14").children(".description").text(userInput2);
 
-    var userInput3 = localStorage.getItem("16");
-    $("#3").children(".description").text(userInput3);
+    var userInput3 = localStorage.getItem("15");
+    $("#15").children(".description").text(userInput3);
 
-    var userInput4 = localStorage.getItem("17");
-    $("#4").children(".description").text(userInput4);
+    var userInput4 = localStorage.getItem("16");
+    $("#16").children(".description").text(userInput4);
     
-    var userInput5 = localStorage.getItem("18");
-    $("#5").children(".description").text(userInput5);
+    var userInput5 = localStorage.getItem("17");
+    $("#17").children(".description").text(userInput5);
   }
-
 
 setColors();
 saveLocalStorage();
