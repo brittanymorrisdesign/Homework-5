@@ -33,18 +33,19 @@ $(document).ready(function() {
 
   // Background colors
   function setColors() {
-    var currentHr = moment().format("h");
+    var currentHr = moment().hours();
+    console.log(currentHr)
     // console.log("currentHr", currentHr)
     // console.log(typeof currentHr)
       $(".time-block").each(function() {
     var currentId = ($(this).attr("id"));
     // console.log("currentId", currentId)
     // console.log(typeof currentId)
-    console.log(currentHr < currentId )
-    if (currentHr < currentId ) {
+    console.log(currentHr > currentId )
+    if (currentHr > currentId ) {
       $(this).addClass("past")
     }
-    else if (currentHr > currentId ) {
+    else if (currentHr < currentId ) {
       $(this).addClass("future").removeClass("past present");
     } else {
       $(this).addClass("present").removeClass("past future")
