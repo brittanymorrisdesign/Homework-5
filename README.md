@@ -1,7 +1,9 @@
 # Homework-5
 Simple calendar application, HTML, CSS powered by jQuery. </br>
 
-Live Demo: https://brittanymorrisdesign.github.io/Homework-5/
+Live Demo: https://brittanymorrisdesign.github.io/Homework-5/</br>
+
+![bg-showcase-20](https://user-images.githubusercontent.com/44029053/78185564-49e62980-7439-11ea-8113-7c5e986f6916.png)
 
 # Objective
 To build an application that displays timeblocks for standard business hours (9 a.m. to 5 p.m.).
