@@ -21,4 +21,4 @@ Poor time management can result in missed meetings and deadlines or create the a
 * jQuery
 * HTML
 * CSS
-
+* Local Storage
